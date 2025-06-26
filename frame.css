@@ -107,7 +107,7 @@ input{
     width: 35%;              /* responsive and large enough */
     max-width: 350px;
     margin-right: 4rem;
-    margin-bottom: -10rem;
+    margin-bottom: 1rem;
     height: auto;
   }
 
