@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paprika&display=swap");
+
+:root{
+  --gap:clamp(1rem,4vw,3rem);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  min-height:100vh;
+  background:url("baloons.jpg") no-repeat center/cover;
+  border:5px solid red;
+  font-family:system-ui;
+  color:#fff;
+  text-shadow:2px 2px 4px #000;
+}
+
+/* ---------- NAV ---------- */
+.nav-wrapper{
+  padding:var(--gap);
+}
+nav ul{
+  display:flex;
+  justify-content:flex-end;
+  gap:var(--gap);
+  list-style:none;
+}
+nav li:hover{color:red;cursor:pointer}
+
+/* ---------- HERO ---------- */
+.hero{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--gap);
+  padding:0 var(--gap) var(--gap);
+  padding-left: 30%;
+}
+
+.greeting{flex:1 1 320px}
+
+.tag{
+  font:300 clamp(1.8rem,5vw,3rem) "Funnel Display",sans-serif;
+}
+.title{
+  font:normal clamp(3rem,10vw,6rem) "Emilys Candy",serif;
+}
+.greeting h2{font:normal clamp(1.5rem,6vw,3rem) "Paprika",cursive}
+.heart{margin-left:0.25rem}
+.prompt{margin:1rem 0 clamp(0.5rem,2vw,1rem)}
+
+.input-wrap{
+  display:flex;
+  gap:0.5rem;
+  max-width:380px;
+}
+input{
+  flex:1;
+  padding:0.4rem 0.6rem;
+}
+.wa-btn{
+  background:none;
+  border:none;
+  cursor:pointer;
+}
+.wa-btn img{width:32px;height:32px}
+
+/* ---------- ART / IMAGES ---------- */
+.art{flex:1 1 320px;position:relative;
+  margin-top: 60px;
+}
+.balloons{max-width:100%;height:auto;
+  margin-left: 30px;
+}
+.mom{
+  position:absolute;
+  bottom:27px;
+  right:20%;
+  width:min(250px,45%);
+  height:auto;
+}
+
+/* ---------- SMALL SCREENS ---------- */
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .art {
+    position: static;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .mom {
+    width: 35%;              /* responsive and large enough */
+    max-width: 350px;
+    margin-right: 4rem;
+    margin-bottom: -10rem;
+    height: auto;
+  }
+
+  .balloons {
+    width: 90%;
+    max-width: 400px;
+    margin: -8rem auto 2rem;
+    display: block;
+    position: static;
+  }
+
+
+  
+
+
+}
+
