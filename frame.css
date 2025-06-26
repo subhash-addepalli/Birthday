@@ -106,7 +106,7 @@ input{
   .mom {
     width: 35%;              /* responsive and large enough */
     max-width: 350px;
-    margin-right: 6rem;
+    margin-right: 1rem;
     margin-bottom: 1rem;
     height: auto;
   }
